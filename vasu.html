@@ -1,0 +1,774 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+        <script src =" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js "></script>
+            
+    <style>
+        .canva{
+            z-index: 3;
+            
+        }
+        
+        nav {
+            position: fixed;
+            z-index: ;
+            background-color: ;
+            color: ;
+            width: 100%;
+            height: 50px;
+            margin-top: 53px;
+            
+        }
+
+
+
+        .video-background-holder {
+            position: relative;
+            background-color: ;
+            height: 100vh
+                /*calc(100vh - 72px)*/
+            ;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .bgcolor.scrolled {
+            background-color: black;
+            color: black;
+            border-bottom: 1px solid;
+            border-color: lightgray;
+        }
+
+
+        .video-background-holder video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .video-background-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .video-background-overlay {
+            position: absolute;
+            top: ;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 2;
+        }
+
+        
+        
+             .testimonials {
+  width: 100%;
+  margin: auto;
+  padding-top: px;
+           margin-top: ;
+  text-align: center;
+  display: flex;
+}
+
+.testimonial-col {
+  flex-basis: 46%;
+  border-radius: 10px;
+  text-align: left;
+  background: #445881;
+    color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+  display: flex;
+}
+
+testimonial-col p {
+  padding: 0;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonial-col .fa {
+  color: #f44336;
+}
+         
+                .testimonial-col{
+                    margin: 20px;
+                }    
+        .display-4 {}
+
+        .lineUp {
+            animation: 3s anim-lineUp ease-out;
+        }
+
+        @keyframes anim-lineUp {
+            0% {
+                opacity: 0;
+                transform: translateY(80%);
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        .inner{
+            padding: 10px;
+            margin: 10px;
+            height: 30vh;
+        }
+
+
+        .footer-dark {
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: #445881;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        @media(max-width:576px){
+        .box{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        }   
+        
+
+         
+       @media(max-width:576px){
+            #mynavbar{
+                position: fixed;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 250px;
+                
+                background-color: #445881;
+                color: ;
+            }
+            #mynavbar{
+               -webkit-animation: fadeinleft 1s both;
+                -moz-animation: fadeinleft 1s both;
+                -o-animation: fadeinleft 1s both;
+                animation: fadeinleft 1s both;
+            }
+            @-webkit-keyframes fadeinleft{
+                0%{
+                    opacity: 0;
+                    -webkit-transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    -webkit-transform: translateX(0);
+                }
+            }
+            @-moz-keyframes fadeinleft{
+                 0%{
+                    opacity: 0;
+                    -moz-transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    -moz-transform: translateX(0);
+                }
+            }
+            @-o-keyframes fadeinleft{
+                 0%{
+                    opacity: 0;
+                    -o-transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    -o-transform: translateX(0);
+                }
+            }
+            @keyframes fadeinleft{
+                 0%{
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+           .testimonial-col{
+    width: 100%;
+        flex-basis: 95%;
+    }
+        }   
+        
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div style="position: fixed; background-color: #445881; z-index:4; width: 100%; display: flex; flex-direction: row; justify-content: flex-end; height: 53px; opacity: 0.95;">
+        <div class ="mobile text-white" style="padding: 2px;"><img src="images/phone-removebg-preview.png" alt="phone" style="height: 60px; padding: 20px;text-decoration: none; color: aliceblue; "><a href="tel:99977 09916" style="text-decoration: none; color: aliceblue;  ">99977 09916</a></div>
+             <div style="padding: 2px;"><img src="images/email2.jpg" alt="phone" style="height: 60px; padding: 13px;"><a href="mailto:info@terzcompliance.com" style="text-decoration: none;color: white;" >info@terzcompliance.com</a></div>
+         </div>
+    
+    <div class="video-background-holder">
+       <!--<nav class="navbar navbar-expand-lg d-none d-lg-block" style="background-color: black; position: fixed; text-decoration-color: white;">
+  <div class="container-fluid text-white">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" style="background-color: black;" >
+            <li><a class="dropdown-item" href="#" style="color: white;">Action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Another action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      </div>
+      
+   <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: ;text-decoration: none;color: black;justify-content: space-evenly;">
+        <div class="navlinks">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" style="background-color: white;;" >
+            <li><a class="dropdown-item" href="#" style="color: black;">Action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black;">Another action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black;">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+           </div>
+</nav>
+        
+    
+       <!-- <nav class="nav  navbar-dark navbar-expand-sm text-white bg-dark" >
+            
+             <a href="cat.html"> <img style="height: 55px; display:block; margin-left: auto; margin-right: auto;" src="images/returns-removebg-preview.png" alt="cat"></a> 
+           
+            
+            <div class="container-fluid toggler">
+                <div class="bg">
+                     
+                    <!--<a class="navbar-brand" href="javascript:void(0)">Website</a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon" style="margin-top: ; margin-bottom: ;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse container-fluid bgcolor" id="mynavbar" style={
+                         display: flex
+                         }>
+                        <ul class="navbar-nav ml-auto" style="display: flex; justify-content: space-between;">
+                            <li class="nav-item active" style="padding:5px 20px;">
+                                <a href="#" class="nav-link active" href="javascript:void(0)">Home</a>
+                            </li>
+                            
+                            <div class="dropdown">
+  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; padding:;">
+    Regulatary Services
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+                            <li class="nav-item" style="padding:5px 20px;">
+                                <a href="#aboutus" class="nav-link" href="javascript:void(0)">About Us</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item" style="padding:5px 20px;">
+                                <a href="coform.php" class="nav-link" href="javascript:void(0)">Contact Us</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+          
+   
+        </nav> -->
+        
+         <section class="canva" style="width: 100%; position: fixed; background-color: black;">
+      <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+      
+    <!--  <a href="index.html"><img style="height: 90px; display: block; margin-left: auto; margin-right: auto;" src="assets/icons/Untitled%20design.png" alt="logo.png"></a>-->
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="navbar.html" style="transform: translateX(-50%);left: 15%; position: absolute; align-items: center;margin: 14px;color: white;"><!-- Vogue --></a>
+      
+    <button class="navbar-toggler" style="color: white;" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"  aria-controls="navbarSupportedContent">
+      <span class="navbar-toggler-icon" style="color: black;border-radius: 5px;padding: 0;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg></span>
+    </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-2" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="margin-top: 56px;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExample">Terz Compliance</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item dropdown" style="color: white;">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+            Services
+          </a>
+          <ul class="dropdown-menu" style="background-color: black;" >
+            <li><a class="dropdown-item" href="#" style="color: white;">Cosmetics</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Medical Devices</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Food</a></li>
+              <li><a class="dropdown-item" href="#" style="color: white;">Legal Metrology</a></li>
+              <li><a class="dropdown-item" href="#" style="color: white;">EPR</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link" href="#" style="color: white;">About Us</a>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link" href="#" style="color: white;">Contact Us</a>
+        </li>
+        
+      </ul>
+         
+     
+  </div>
+</div>
+      
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: ;text-decoration: none;color: black;">
+        <img style="height: 60px; " src="images/Terz_w-removebg-preview.png" alt="bg">
+        <div class="navlinks">
+             
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"  >
+          
+         <ul class="navbar-nav" style="justify-content: space-evenly; margin-left: 50px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+        </li>
+                     <li class="nav-item dropdown" style="color: aliceblue;">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; margin-left: 20px;">
+            Services
+          </a>
+          <ul class="dropdown-menu" style="background-color: white;;" >
+            <li><a class="dropdown-item" href="#" style="color: black;">Cosmetics</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black;">Medical Devices</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black;">Food</a></li>
+              <li><a class="dropdown-item" href="#" style="color: black;">Legal Metrology</a></li>
+              <li><a class="dropdown-item" href="#" style="color: black;">EPR</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="color: aliceblue;">
+          <a class="nav-link" href="#" style="color: white; margin-left: 20px;">About Us</a>
+        </li>
+        <li class="nav-item" style="color: aliceblue;">
+          <a class="nav-link" href="#" style="color: white; margin-left: 20px;">Contact Us</a>
+        </li>
+
+      </ul>
+        </ul>
+         </div>
+      <form class="d-flex">
+        
+        
+      </form>
+    </div>
+  </div>
+          </div>
+</nav>
+    </section>  
+
+        <div class="video-background-overlay"></div>
+        <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="videos/Blinking%20slights%20patterns_preview.mp4" type="video/mp4">
+    </video>-->
+        <img style="position: fixed; z-index: -1;height: 100%; width: 100%;" src="images/cosmetic.jpg" alt="bg">
+        <div class="video-background-content container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <div class=lineUp style="position: absolute z-index: 2">
+                        <h1 class="display-4" style="border-color: white; border-style: solid;font-weight: 600; text-transform: uppercase;"> Terz Compliance</h1>
+                        <p class="lead mb-0" style="background-color: white;color: black;">Welcome to Terz Compliance</p>
+                        <p>Your Premier Destination for Regulatory Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <div class=lineUp style="background-color: black;">
+  
+        <div class="container-fluid " style="height: vh; background-color: #445881; color: white;text-align: justify; margin: ;" id="services">
+          
+            <div class="row" style="">
+                
+                <div class="col-md-7 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-family: 'Roboto Serif', serif;font-size: 19px;padding: 15px;margin:;">
+                    <h2 style="text-align: center; padding: 10px;font-weight: bold;">Terz Compliance</h2>
+                    <p style="font-family:  ;">At Terz Compliance, we are your trusted regulatory professionals, dedicated to providing exceptional consultancy services for product import registration in India. Our seasoned team of regulatory experts boasts years of experience, ensuring that your compliance needs are met with precision and expertise. We specialize in guiding companies through the intricate process of registering products, covering a wide range of categories, including cosmetics, medical devices, in vitro diagnostics, and food/FSSAI.
+</p><br>
+                    
+                </div>
+                <div class="col-md-5" style="margin: 0; padding: 0;"> <img style="width: 100%; height:400px;" src="images/team.jpg" alt="advertisement"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+      <div class=lineUp style="background-color: black;">
+
+        <div class="container-fluid " style="height: vh; background-color: white; color: black;text-align: justify;" id="services">
+    <h3 style="padding: 20px; text-align: center;"> Regulatory Framework we follow</h3>
+           <section class="testimonials">
+      <div class="container-fluid"  data-aos="fade-up" >
+       <div class="row">
+            <div class="testimonial-col">
+                 <img src="assets/images/man2.jpg" alt="profile.png">
+                <div class="rate" style=" padding: 10px;font-weight: bold; justify-content: center;">
+                    <h3>Our Heritage</h3>
+                    <p style="font-weight: 600;">Terz Compliance is a name that resonates with a rich heritage in the field of regulatory compliance. Our journey began as pioneers in the industry, and over the years, we have earned a distinguished reputation for delivering top-notch services that simplify the import registration process.</p>
+                    
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="assets/images/man2.jpg" alt="profile.png">
+                <div class="rate">
+                    <h3>Precision and Punctuality</h3>
+                    <p style="font-weight: 600;">At Terz Compliance, we take great pride in our ability to exceed expectations by consistently delivering registration licenses well ahead of schedule. Our commitment to meeting deadlines underscores the vital role time plays in your business operations. We understand the urgency of getting your products to market, and we are here to expedite that process.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+          <div class="row">
+            <div class="testimonial-col">
+                 <img src="assets/images/man2.jpg" alt="profile.png">
+                <div class="rate" style=" padding: 10px;font-weight: bold; justify-content: center;">
+                    <h3>Unrivaled Expertise</h3>
+                    <p style="font-weight: 600;">Our esteemed regulatory professionals have honed their skills over many years, making them experts in navigating the complexities of the Indian regulatory landscape. We possess an in-depth understanding of the evolving regulatory environment and maintain strong relationships with relevant authorities to ensure a smooth registration process for your products.</p>
+                    
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="assets/images/man2.jpg" alt="profile.png">
+                <div class="rate">
+                    <h3>Comprehensive Solutions</h3>
+                    <p style="font-weight: 600;">Beyond product registration, Terz Compliance excels in providing comprehensive solutions tailored to your compliance needs. Our services are designed to eliminate the hassles associated with regulatory procedures, offering you peace of mind as you navigate the intricate regulatory landscape.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+          <div class="row">
+            <div class="testimonial-col">
+                 <img src="assets/images/man2.jpg" alt="profile.png">
+                <div class="rate" style=" padding: 10px;font-weight: bold; justify-content: center;">
+                    <h3>Our Pledge</h3>
+                    <p style="font-weight: 600;">Terz Compliance is committed to ensuring your registration experience is seamless and worry-free. We pledge to provide you with the best expertise in the industry to meet your specific compliance requirements. Your success is our ultimate goal, and we are dedicated to removing the regulatory barriers that can impede your business growth.</p>
+                    
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="assets/images/man2.jpg" alt="profile.png">
+                <div class="rate">
+                    <h3>Your Path to Regulatory Excellence</h3>
+                    <p style="font-weight: 600;">Choose Terz Compliance as your partner on the path to regulatory excellence. With our team of seasoned professionals and a track record of success, you can trust us to help you achieve your compliance goals efficiently and effectively.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+          </div>
+    </section>
+        </div>
+    </div>
+    
+    <div class="row" style="background-color: lightgrey;width: 100%; height: vh;">
+        <h3 style="text-align: center;margin: 20px;">Area of Expertise</h3>
+  <div class="col" style="background-color: white; margin: 10px;  border-radius: 80px;padding: 30px; color: #445881;">Choose Terz Compliance as your partner on the path</div>
+ <div class="col" style="background-color: white; margin: 10px;  border-radius: 80px;padding: 30px; color: #445881;">Choose Terz Compliance as your partner on the path</div>
+        <div class="col" style="background-color: white; margin: 10px;  border-radius: 80px;padding: 30px; color: #445881;">Choose Terz Compliance as your partner on the path</div>
+        <div class="col" style="background-color: white; margin: 10px;  border-radius: 80px;padding: 30px; color: #445881;">Choose Terz Compliance as your partner on the path</div>
+</div>
+    
+   
+
+    
+  
+    
+    
+    
+
+    <div class="container-fluid" style="background-color: #445881; color: white; margin-bottom: 0px;" id="aboutus">
+       
+            <div class="">
+                <p style="margin-top: auto; margin-bottom: auto; text-align: justify; padding: 15px;font-family: 'Roboto Serif', serif;font-size: "></p>
+                <h3 style="font-size: 44px;font-family: 'Roboto Serif', serif;font-weight: bold;">About US</h3>
+                <p style="font-family: 'Roboto Serif', serif;font-size: 19px;letter-spacing: 1px;padding: 25px;">Welcome to Terz Compliance, your trusted destination for regulatory excellence in India. Our experienced team of regulatory experts specializes in streamlining product import registration across various categories, including cosmetics, medical devices, in vitro diagnostics, and food/FSSAI. With a heritage rooted in the industry, we deliver precise and punctual results, ensuring you receive registration licenses well ahead of schedule. Terz Compliance provides comprehensive solutions, eliminating regulatory hassles and expediting your path to success. Contact us today to experience hassle-free product registration and ensure your products reach the Indian market swiftly and seamlessly.</p>
+                
+            </div>
+           
+       
+    </div>
+    
+    <footer class="bg-dark text-center text-white " style="margin-top: -16px;">
+  
+  <div class="container p-4">
+    
+    <section class="">
+      
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Terz Compliance</h5>
+
+          <p>We offer all kinds of consultancy services to – Drugs, Biologicals, Medical Device, In-Vitro Diagnostics, Food, Nutraceuticals, Cosmetics.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">services</h5>
+
+          <ul class="list-unstyled mb-0 text-white" style="" >
+            <li>
+              <a href="index.html" class="text-white " style="text-decoration: none;">Cosmetics</a>
+            </li>
+              
+            <li>
+              <a href="" class="text-white" style="text-decoration: none;">Medical Devices</a>
+            </li>
+            <li>
+              <a href="" class="text-white" style="text-decoration: none;">Food</a>
+            </li>
+            <li>
+              <a href="" class="text-white" style="text-decoration: none;">Legal Metrology</a>
+            </li>
+              <li>
+              <a href="" class="text-white" style="text-decoration: none;">EPR</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Menu</h5>
+
+          <ul class="list-unstyled mb-0 text-white" style="" >
+            <li>
+              <a href="index.html" class="text-white " style="text-decoration: none;">Home</a>
+            </li>
+              
+            <li>
+              <a href="" class="text-white" style="text-decoration: none;">About Us</a>
+            </li>
+            <li>
+              <a href="" class="text-white" style="text-decoration: none;">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+         <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left; padding: 10px;">
+          <h5 class="text-uppercase" style="text-align: center;">Contact</h5>
+            <div class ="mobile text-white" style=";"><img src="images/phone-removebg-preview.png" alt="phone" style="height: 60px; padding: 20px;text-decoration: none; color: aliceblue;"><a href="tel:9997709916" style="text-decoration: none; color: aliceblue;">9997709916</a></div>
+             <div style=""><img src="images/email2.jpg" alt="phone" style="height: 60px; padding: 13px;"><a href="mailto:info@terzcompliance.com" style="text-decoration: none;color: white;" >info@terzcompliance.com</a></div>
+         
+        </div>
+        
+      </div>
+      
+    </section>
+    
+
+  </div>
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+   Copyright © 2023 Terz Compliance All rights reserved
+    <a class="text-white" href=""> </a>
+  </div>
+ 
+
+</footer>
+    <script>
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        
+        $(document).ready(function() {  
+          
+            var sideslider = $('[data-toggle=collapse-side]');
+              
+            var sel = sideslider.attr('data-target');
+            var sel2 = sideslider.attr('data-target-2');
+            
+            sideslider.click(function(event)
+                             {
+                alert(sideslider);
+                $(sel).toggleClass('in');
+                $(sel2).toggleClass('out');
+                
+              });
+        });
+        
+    </script>
+
+
+
+</body></html>

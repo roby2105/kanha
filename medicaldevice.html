@@ -1,0 +1,859 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Medical devices</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+        <script src =" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js "></script>
+            
+    <style>
+       
+        .canva{
+            z-index: 3;
+            margin-top: -13vh;
+            
+        }
+        
+        nav {
+            position: fixed;
+            z-index: ;
+            background-color: ;
+            color: ;
+            width: 100%;
+            height: px;
+            margin-top: px;
+            
+        }
+
+
+
+        .video-background-holder {
+           
+            background-color: ;
+            height: 100vh
+                /*calc(100vh - 72px)*/
+            ;
+            min-height: 25rem;
+            width: 100%;
+        }
+
+        .bgcolor.scrolled {
+            background-color: black;
+            color: black;
+            border-bottom: 1px solid;
+            border-color: lightgray;
+        }
+
+
+        
+
+        
+        
+             .testimonials {
+  width: 100%;
+  margin: auto;
+  padding-top: px;
+           margin-top: ;
+  text-align: center;
+  display: flex;
+}
+
+.testimonial-col {
+  flex-basis: 46%;
+  border-radius: 10px;
+  text-align: left;
+  background: #445881;
+    color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+  display: flex;
+}
+
+testimonial-col p {
+  padding: 0;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonial-col .fa {
+  color: #f44336;
+}
+         
+                .testimonial-col{
+                    margin: 20px;
+                }    
+        .display-4 {}
+/*button*/
+        .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+        
+ /*end*/       
+        .lineUp {
+            animation: 3s anim-lineUp ease-out;
+        }
+
+        @keyframes anim-lineUp {
+            0% {
+                opacity: 0;
+                transform: translateY(80%);
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        .inner{
+            padding: 10px;
+            margin: 10px;
+            height: 30vh;
+        }
+
+
+        .firstd{
+            margin-top: -100px;
+        }
+        
+        .footer-dark {
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: #445881;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        @media(max-width:576px){
+        .box{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        }   
+        
+
+         
+       @media(max-width:576px){
+            #mynavbar{
+                position: fixed;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 250px;
+                
+                background-color: #445881;
+                color: ;
+            }
+            #mynavbar{
+               -webkit-animation: fadeinleft 1s both;
+                -moz-animation: fadeinleft 1s both;
+                -o-animation: fadeinleft 1s both;
+                animation: fadeinleft 1s both;
+            }
+           
+            @-webkit-keyframes fadeinleft{
+                0%{
+                    opacity: 0;
+                    -webkit-transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    -webkit-transform: translateX(0);
+                }
+            }
+            @-moz-keyframes fadeinleft{
+                 0%{
+                    opacity: 0;
+                    -moz-transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    -moz-transform: translateX(0);
+                }
+            }
+            @-o-keyframes fadeinleft{
+                 0%{
+                    opacity: 0;
+                    -o-transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    -o-transform: translateX(0);
+                }
+            }
+            @keyframes fadeinleft{
+                 0%{
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+           .testimonial-col{
+    width: 100%;
+        flex-basis: 95%;
+    }
+           
+        }  
+        
+        @media(max-width:576px){
+        .box{
+            margin: 0;
+            margin-top: 0px;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+         @media(max-width:576px){
+                 .firstd{
+                     margin-top: -118px;
+                 }
+        }
+            
+         @media(max-width:576px){
+             .mobile{
+                margin-right: 20px;
+             }
+             .mobile img{
+                 display: none;
+             }
+             .email img{
+                 display: none;
+                 padding: 50px;
+                 margin-top: 20px;
+             }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--
+    <div style="position: fixed; background-color: white; z-index:4; width: 100%; display: flex; flex-direction: row; justify-content: flex-end; height: 53px; opacity: 0.95;">
+        <div class ="mobile text" style="padding: 2px;"><img src="images/phone-removebg-preview.png" alt="phone" style="height: 60px; padding: 20px;text-decoration: none; color: black; "><a href="tel:7983858470" style="text-decoration: none; color: black;  ">7983858470</a></div>
+             <div class="email" style="padding: 2px;"><img src="images/email2.jpg" alt="phone" style="height: 55px; padding: 13px;"><a href="mailto:info@terzcompliance.com" style="text-decoration: none;color: black;" >info@terzcompliance.com</a></div>
+         </div>
+    -->
+    <div class="video-background-holder">
+       <!--<nav class="navbar navbar-expand-lg d-none d-lg-block" style="background-color: black; position: fixed; text-decoration-color: white;">
+  <div class="container-fluid text-white">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" style="background-color: black;" >
+            <li><a class="dropdown-item" href="#" style="color: white;">Action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Another action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      </div>
+      
+   <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: ;text-decoration: none;color: black;justify-content: space-evenly;">
+        <div class="navlinks">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" style="background-color: white;;" >
+            <li><a class="dropdown-item" href="#" style="color: black;">Action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black;">Another action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black;">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+           </div>
+</nav>
+        
+    
+       <!-- <nav class="nav  navbar-dark navbar-expand-sm text-white bg-dark" >
+            
+             <a href="cat.html"> <img style="height: 55px; display:block; margin-left: auto; margin-right: auto;" src="images/returns-removebg-preview.png" alt="cat"></a> 
+           
+            
+            <div class="container-fluid toggler">
+                <div class="bg">
+                     
+                    <!--<a class="navbar-brand" href="javascript:void(0)">Website</a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon" style="margin-top: ; margin-bottom: ;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse container-fluid bgcolor" id="mynavbar" style={
+                         display: flex
+                         }>
+                        <ul class="navbar-nav ml-auto" style="display: flex; justify-content: space-between;">
+                            <li class="nav-item active" style="padding:5px 20px;">
+                                <a href="#" class="nav-link active" href="javascript:void(0)">Home</a>
+                            </li>
+                            
+                            <div class="dropdown">
+  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; padding:;">
+    Regulatary Services
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+                            <li class="nav-item" style="padding:5px 20px;">
+                                <a href="#aboutus" class="nav-link" href="javascript:void(0)">About Us</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item" style="padding:5px 20px;">
+                                <a href="coform.php" class="nav-link" href="javascript:void(0)">Contact Us</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+          
+   
+        </nav> -->
+        
+         <section class="canva" style="width: 100%; height: vh; position: fixed; background-color: white;">
+      <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+      
+    <!--  <a href="index.html"><img style="height: 90px; display: block; margin-left: auto; margin-right: auto;" src="assets/icons/Untitled%20design.png" alt="logo.png"></a>-->
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="navbar.html" style="transform: translateX(-50%);left: 15%; position: absolute; align-items: center;margin: 14px;color: white;"><!-- Vogue --></a>
+      
+    <button class="navbar-toggler" style="color: white;" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"  aria-controls="navbarSupportedContent">
+      <span class="navbar-toggler-icon" style="color: black;border-radius: 50px;padding: 0;" ><img src="images/menu-%20black.jpg" style="height: 30px;width: 100%;"></span>
+    </button>
+      
+        
+        
+      <div class="offcanvas offcanvas-start" tabindex="-2" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="margin-top: 56px;">
+          
+          <div style="position: ; background-color: white; z-index:4; display: flex; flex-direction: row; justify-content: flex-end; opacity: 0.95;">
+        <div class ="mobile text" style="padding: 2px;"><img src="images/phone-removebg-preview.png" alt="phone" style="height: 60px; padding: 20px;text-decoration: none; color: black; "><a href="tel:7983858470" style="text-decoration: none; color: black;  ">7983858470</a></div>
+             <div class="email" style="padding: 2px;"><img src="images/email2.jpg" alt="phone" style="height: 55px; padding: 13px;"><a href="mailto:info@terzcompliance.com" style="text-decoration: none;color: black;" >info@terzcompliance.com</a></div>
+         </div>
+          
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExample">Terz Compliance</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item dropdown" style="color: black;">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+            Services
+          </a>
+          <ul class="dropdown-menu" style="background-color: white;" >
+            <li><a class="dropdown-item" href="Cosmetic.html" style="color: black;">Cosmetics</a></li>
+            <li><a class="dropdown-item" href="medicaldevice.html" style="color: black;">Medical Devices</a></li>
+              <li><a class="dropdown-item" href="medicaldevice.html" style="color: black;">Medical Devices - Importer</a></li>
+              <li><a class="dropdown-item" href="medicaldevice.html" style="color: black;">Medical Devices - Manufacture</a></li>
+            <li><a class="dropdown-item" href="food.html" style="color: black;">Food</a></li>
+              <li><a class="dropdown-item" href="lmpc.html" style="color: black;">Legal Metrology</a></li>
+              <li><a class="dropdown-item" href="epr.html" style="color: black;">EPR</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link" href="aboutus.html" style="color: black;">About Us</a>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a class="nav-link" href="contactus.html" style="color: black;">Contact Us</a>
+        </li>
+        
+      </ul>
+         
+     
+  </div>
+</div>
+      
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: ;text-decoration: none;color: black;">
+        <img style="height: 80px; " src="images/logo2_page-0001.jpg" alt="bg">
+        <div class="navlinks">
+             
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"  >
+          
+         <ul class="navbar-nav" style="justify-content: space-evenly; margin-left: 50px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" style="color: black; background-color: white;">Home</a>
+        </li>
+                     <li class="nav-item dropdown" style="color: black;">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; margin-left: 20px;">
+            Services
+          </a>
+          <ul class="dropdown-menu" style="background-color: white;;" >
+            <li><a class="dropdown-item" href="Cosmetic.html" style="color: black;">Cosmetics</a></li>
+            <li><a class="dropdown-item" href="medicaldevice.html" style="color: black;">Medical Devices</a></li>
+              <li><a class="dropdown-item" href="medicaldevice.html" style="color: black;">Medical Devices - Importer</a></li>
+              <li><a class="dropdown-item" href="medicaldevice.html" style="color: black;">Medical Devices - Manufacturer</a></li>
+            <li><a class="dropdown-item" href="food.html" style="color: black;">Food</a></li>
+              <li><a class="dropdown-item" href="lmpc.html" style="color: black;">Legal Metrology</a></li>
+              <li><a class="dropdown-item" href="epr.html" style="color: black;">EPR</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="color: black;">
+          <a class="nav-link" href="aboutus.html" style="color: black; margin-left: 20px;">About Us</a>
+        </li>
+        <li class="nav-item" style="color: aliceblue;">
+          <a class="nav-link" href="contactus.html" style="color: black; margin-left: 20px;">Contact Us</a>
+        </li>
+
+      </ul>
+        </ul>
+         </div>
+        
+        <form class="form-inline my-2 my-lg-0">
+            <div class="position-absolute top-0 end-0" style="display: flex; ">
+      <div class ="mobile text" style="padding: 2px; justify-content: flex-end;"><img src="images/phone-removebg-preview.png" alt="phone" style="height: 60px; padding: 20px;text-decoration: none; color: black; "><a href="tel:7983858470" style="text-decoration: none; color: black;  ">7983858470</a></div>
+             <div class="email" style="padding: 2px; "><img src="images/email2.jpg" alt="phone" style="height: 55px; padding: 13px;"><a href="mailto:info@terzcompliance.com" style="text-decoration: none;color: black;" >info@terzcompliance.com</a></div>
+            </div>
+    </form>
+        
+      <!--  
+        
+      </div> -->
+            <form class="d-flex">
+        
+        
+      </form>
+    </div>
+  </div>
+          </div>
+</nav>
+    </section>  
+         <div  style="background-color: ; margin-top: 13vh;">
+  
+        <div class="container-fluid " style="height: vh; background-color: ; color: ;text-align: justify; margin: ;" id="services">
+          
+            <div class="row" style="">
+                
+                <div class="col-md-7 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-family: 'Roboto Serif', serif;font-size: 19px;padding: 15px;margin:;">
+                    <h2 style="text-align: center; padding: 10px;font-weight: bold;">Medical Device Registration</h2><br><h4 style="font-weight: bold;">Terz Compliance's Expert Assistance</h4>
+                    <p style="font-family:  ;">Are you a medical device manufacturer looking to enter the dynamic Indian market? Terz Compliance specializes in providing manufacturers with seamless and transparent assistance in the process of registering medical devices in India. <br><br>
+                        Whether you're an established manufacturer seeking expansion or a newcomer eager to explore India's market potential, Terz Compliance is your reliable, transparent, and cost-effective partner. We simplify the regulatory process, allowing you to make a positive impact with your medical devices in India.
+</p>
+                    
+                </div>
+                <div class="col-md-5" style="margin: 0; padding: 0;"> <img style="display: block; width: 90%; height:px; margin-left: auto;margin-right: auto; margin-top: 30px; border-radius: 20px;" src="images/medicaldevice.jpg" alt="advertisement"></div>
+            </div>
+        </div>
+    </div>
+        
+         <div  style="background-color: ; margin-top: vh;">
+  
+        <div class="container-fluid " style="height: vh; background-color: ; color: ;text-align: justify; margin: ;" id="services">
+          
+            <div class="row box" style="">
+                 <div class="col-md-5" style="margin: 0; padding: 0; align-content: center;"> <img style=" display: block; width: 70%; height:400px;; margin-left: auto;margin-right: auto; margin-top: 100px; padding: px;  border-radius: 20px; " src="images/risk.jpeg" alt="advertisement"></div>
+                <div class="col-md-7 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-family: 'Roboto Serif', serif;font-size: 19px;padding: 15px;margin:;">
+                    <h2 style="text-align: ; padding: 10px;font-weight: bold;">Our Comprehensive Services:</h2>
+                   <ul>
+                    <li><b>Expert Guidance:</b> Our team of regulatory experts simplifies the complex regulatory landscape set by the Central Drugs Standard Control Organization (CDSCO). We provide clear guidance on product classification, documentation, and quality standards without using technical jargon.</li>
+<li><b>Efficient Registration:</b> Terz Compliance is committed to ensuring a smooth and timely registration process for your medical devices. We handle the regulatory intricacies, allowing you to focus on bringing your products to market confidently.</li>
+<li><b>Quality Assurance:</b> Meeting quality standards is vital when entering the Indian market. Terz Compliance works closely with manufacturers to ensure that their medical devices meet the strict criteria outlined by ISO 13485 and other applicable regulations.</li>
+<li><b>Prompt Licensing:</b> Our commitment to efficiency ensures that you receive the necessary licenses and approvals on time. We understand the importance of meeting deadlines and work diligently to expedite the licensing process.</li>
+<li><b>Transparency:</b> At Terz Compliance, we prioritize transparency throughout the registration process. We keep you informed at every step, providing a clear understanding of the progress and requirements, ensuring that you are always in the loop.</li>
+<li><b>Real-time Updates:</b> Our clients benefit from regular, real-time updates on the status of their registration process. You can track the progress of your application, enabling you to plan accordingly and make informed decisions.</li>
+<li><b>Cost-Effective Solutions:</b> Terz Compliance offers cost-effective services, helping you navigate the Indian regulatory landscape without breaking the bank. We understand the value of cost efficiency and strive to provide economical solutions.</li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+        
+        
+
+
+<button type="button" class="collapsible">For Manufactures</button>
+<div class="content">
+    
+  
+        <div class="container-fluid " style="height: vh; background-color: white ; color: ;text-align: justify; margin: ;" id="services">
+          
+            <div class="row" style="">
+                
+                <div class="col-md-7 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-family: 'Roboto Serif', serif;font-size: 19px;padding: 15px;margin:;">
+                    <h4 style=" padding: 10px;font-weight: bold;">Process of registration of Medical device</h4>
+                    <p style="font-family:  ;">The process of registering a medical device in India can be complex and involves several steps. Here is a simplified overview of the typical registration process:
+                        
+                    
+</p>
+                    <ul>
+                    <li><b>Determine Device Classification:</b> The first step is to determine the classification of your medical device according to the Indian regulatory framework. Devices are classified into different categories based on their risk and intended use.</li>
+                        <li><b>Appoint an Indian Agent:</b> Foreign manufacturers are required to appoint an authorized Indian agent who will represent them before the Indian regulatory authorities.</li>
+                        <li><b>Prepare Documentation:</b> Prepare a comprehensive set of documents, including:
+                        <ul>
+                            <li>Device technical specifications and labeling</li>
+                            <li>Risk assessment report</li>
+                            <li>Clinical data (if applicable)</li>
+                            <li>Quality management system certification (e.g., ISO 13485)</li>
+                            <li>Declaration of conformity</li>
+                            </ul>
+                        </li>
+                        <li><b>Submit Application:</b> Submit your registration application along with the required documents to the Central Drugs Standard Control Organization (CDSCO). The application should be submitted through the Online System for Medical Devices (OSMD). </li>
+                        <li><b>Review and Evaluation: </b>The CDSCO will review your application and documents. This may involve a thorough examination of your device's technical data and safety information.</li>
+                        <li><b>Clinical Trials (if necessary): </b>Depending on the risk classification of your device, clinical trials may be required to establish safety and efficacy. This step is not applicable to all devices.</li>
+                        <li><b>Inspection of Manufacturing Site:</b> The CDSCO may conduct an inspection of the manufacturing facility to ensure compliance with quality standards.</li>
+                        <li><b>Registration Certificate: </b>If your application is approved, you will receive a Registration Certificate from the CDSCO. This certificate allows you to legally market and sell your medical device in India.</li>
+                        <li><b>Post-Market Surveillance: </b>After registration, it's essential to establish a post-market surveillance system to monitor the safety and performance of your device and promptly report any adverse events.</li>
+                        <li><b>Renewal and Compliance: </b>Medical device registrations typically need to be renewed periodically. Ensure ongoing compliance with evolving regulations and standards.</li>
+                    </ul>
+                    <p>Please note that the specifics of the registration process may vary depending on the device's classification and other factors. It is crucial to consult with regulatory experts or a consultancy like Terz Compliance for precise guidance tailored to your device and regulatory requirements. Additionally, regulations and processes may change over time, so staying updated with the latest information from the CDSCO is essential.</p>
+                </div>
+                <div class="col-md-5" style="margin: 0; padding: 0;"> <img style="display: block; width: 90%; height:px; margin-left: auto;margin-right: auto; margin-top: 30px; border-radius: 20px;" src="images/medicaldevice.jpg" alt="advertisement"></div>
+            </div>
+        </div>
+   
+</div>
+<button type="button" class="collapsible">For Importers</button>
+<div class="content" style="background-color: white;">
+  <p>For importing medical devices following is the process followed:<br>
+Importing medical devices into India involves a regulatory process to ensure that products meet safety and quality standards. Here is an overview of the typical process for medical device importers in India:
+</p>
+    <ul>
+    <li><b>Determine Device Classification:</b> Just like manufacturers, importers must determine the classification of the medical devices they intend to import based on their intended use and risk level.</li>
+        <li><b>Appoint an Authorized Agent:</b> Importers must appoint an authorized agent or a distributor within India, who will act as a liaison between the importer and the Indian regulatory authorities. This agent is responsible for obtaining the necessary licenses and permits.</li>
+        <li><b>Verify Registration:</b> Ensure that the manufacturer of the medical device has successfully registered the product with the Central Drugs Standard Control Organization (CDSCO) in India. Only registered devices can be legally imported and sold in the Indian market.</li>
+        <li><b>Apply for Import License:</b> Importers need to obtain an import license from the CDSCO. The application should include details about the imported device, including its classification, intended use, and technical specifications.<br><b>Documents required for application for import license (MD-14) are as per the checklist provided by the CDSCO as per the different risk class. License will be grant in (MD-15).</b></li>
+        <li><b>Quality and Safety Checks:</b> Imported medical devices may undergo quality and safety checks by the CDSCO to ensure they meet Indian standards and regulations. This may include sample testing and inspection of the imported products.</li>
+        <li><b>Distribution and Marketing:</b> Once the devices clear customs and pass quality checks, they can be distributed and marketed in India. Ensure compliance with labeling and packaging requirements, including the use of Indian-standard symbols and information.</li>
+        <li><b>Retention of License:</b> Import licenses typically need to be renewed periodically. Importers must also ensure ongoing compliance with evolving regulations and standards.</li>
+    </ul>
+    <p>All the process will be followed according to the Medical Devices Rules, 2017 under Drugs and Cosmetics Act, 1940. Requisite fees will be as per the Second Schedule of MDR, 2017.<br/><br>Please note that the specific import process may vary depending on the device's classification and other factors. It's crucial for importers to work closely with regulatory experts or consultancies like Terz Compliance to ensure compliance with the latest regulations and navigate the import process effectively. Additionally, regulations and processes may change over time, so staying updated with the latest information from the CDSCO is essential.</p>
+</div>
+
+        
+    <div class="container-fluid">
+         <div class="row" style="justify-content: ;background-image: url(images/blues2.jpg); background-repeat: no-repeat; background-size: cover; color: white; height: vh;">
+      <div class="col-sm" style="padding: 40px;">
+      
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="4ca55bc0-6939-46bf-8ac0-1354b0392ac5">
+  <div class="form-group">
+    <label for="Name1">Name</label>
+    <input type="text" class="form-control" id="Name1" name="name" aria-describedby="emailHelp" placeholder="Enter Name">
+  </div>
+  <div class="form-group">
+    <label for="">Email</label>
+<input type="email" class="form-control" name="email" required placeholder="Enter Mail Adress">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="Message1">Message</label>
+    <textarea name="message" required class="form-control" id="Message1" placeholder="Message"></textarea>
+  </div>
+  <br>
+  <div class="h-captcha" data-captcha="true"></div>
+  <button type="submit" class="btn btn-dark">Submit</button>
+</form>
+        </div>
+        <div class="col-sm" style="padding: 40px;">
+          <h2 class="text" style="">Contact Us</h2>
+        <p class="text-justify">
+       <b>THANK YOU FOR YOUR INTEREST IN TERZ COMPLIANCE        </b>   <br>
+            We are just a phone call or mail away from you.<br>
+            Our Mail ID: info@terzcompliance.com<br>
+            Phone:  7983858470<br><br>
+            
+            
+                    
+        </p>
+          <p>We are a completely remote organization dedicated to assisting life science teams in efficiently bringing their life-saving products to market and achieving successful scalability.</p>
+          </div>     
+           </div>
+        
+        </div>
+    
+        
+        
+        
+     <footer class="bg-dark text-center text-white " style="margin-top: -16px;">
+  
+  <div class="container p-4">
+    
+    <section class="">
+      
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left; margin-left: px; padding: px; ">
+          <h5 class="text-uppercase" style="text-align: left; ">Terz Compliance</h5>
+
+          <p style="margin-right: 40px; ;">We offer all kinds of consultancy services to – Drug License, EPR, LMPC, IEC, Medical Device, In-Vitro Diagnostics, Food, Nutraceuticals, Cosmetics.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left; padding: px;">
+          <h5 class="text-uppercase" style=" text-align: left; ">services</h5>
+
+          <ul class="list-unstyled mb-0 text-white" style=" padding: px;"  >
+            <li>
+              <a href="Cosmetic.html" class="text-white " style="text-decoration: none;">      Cosmetics</a>
+            </li>
+              
+            <li>
+              <a href="medicaldevice.html" class="text-white" style="text-decoration: none;">Medical Devices</a>
+            </li>
+              <li>
+              <a href="medicaldevice.html" class="text-white" style="text-decoration: none;">Medical Devices - Importer</a>
+            </li>
+              <li>
+              <a href="medicaldevice.html" class="text-white" style="text-decoration: none;">Medical Devices - Manufacturer</a>
+            </li>
+            <li>
+              <a href="food.html" class="text-white" style="text-decoration: none;">Food</a>
+            </li>
+            <li>
+              <a href="lmpc.html" class="text-white" style="text-decoration: none;">Legal Metrology</a>
+            </li>
+              <li>
+              <a href="epr.html" class="text-white" style="text-decoration: none;">EPR</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left; padding: px;">
+          <h5 class="text-uppercase" style="text-align: left;">Menu</h5>
+
+          <ul class="list-unstyled mb-0 text-white" style="padding: px;" >
+            <li>
+              <a href="index.html" class="text-white " style="text-decoration: none;">Home</a>
+            </li>
+              
+            <li>
+              <a href="aboutus.html" class="text-white" style="text-decoration: none;">About Us</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="text-white" style="text-decoration: none;">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+         <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left; padding: px;">
+          <h5 class="text-uppercase" style="text-align: left;">Contact</h5>
+            <div class ="mobile text-white" style=";"><img src="images/phone-removebg-preview.png" alt="phone" style="height: 60px; padding: 20px;text-decoration: none; color: aliceblue;"><a href="tel: 7983858470" style="text-decoration: none; color: aliceblue;">7983858470</a></div>
+             <div style=""><img src="images/email2.jpg" alt="phone" style="height: 60px; padding: 13px;"><a href="mailto:info@terzcompliance.com" style="text-decoration: none;color: white;" >info@terzcompliance.com</a></div>
+         
+        </div>
+        
+      </div>
+      
+    </section>
+    
+
+  </div>
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+   Copyright © 2023 Terz Compliance All rights reserved
+    <a class="text-white" href=""> </a>
+  </div>
+ 
+
+</footer>
+    <script>
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        
+        $(document).ready(function() {  
+          
+            var sideslider = $('[data-toggle=collapse-side]');
+              
+            var sel = sideslider.attr('data-target');
+            var sel2 = sideslider.attr('data-target-2');
+            
+            sideslider.click(function(event)
+                             {
+                alert(sideslider);
+                $(sel).toggleClass('in');
+                $(sel2).toggleClass('out');
+                
+              });
+        });
+        
+    </script>
+
+    </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+
+</body></html>
